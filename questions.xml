@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+    <note>
+    <question>Tove1</question>
+    <answer>Jani1</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Jani1</answer>
+        <answer>Jani2</answer>
+        <answer>Jani3</answer>
+        <answer>Jani4</answer>
+        <answer>Jani5</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <question>Tove2</question>
+    <answer>Jani2</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Jani1</answer>
+        <answer>Jani2</answer>
+        <answer>Jani3</answer>
+        <answer>Jani4</answer>
+        <answer>Jani5</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <question>Tove3</question>
+    <answer>Jani3</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Jani1</answer>
+        <answer>Jani2</answer>
+        <answer>Jani3</answer>
+        <answer>Jani4</answer>
+        <answer>Jani5</answer>
+    </all_answers>    
+    </note>
+
+    <note>
+    <question>Tove4</question>
+    <answer>Jani4</answer>
+    <difficulty>4</difficulty>
+    <all_answers>
+        <answer>Jani1</answer>
+        <answer>Jani2</answer>
+        <answer>Jani3</answer>
+        <answer>Jani4</answer>
+        <answer>Jani5</answer>
+    </all_answers>    
+    </note>
+
+    <note>
+    <question>Tove5</question>
+    <answer>Jani5</answer>
+    <difficulty>5</difficulty>
+    <all_answers>
+        <answer>Jani1</answer>
+        <answer>Jani2</answer>
+        <answer>Jani3</answer>
+        <answer>Jani4</answer>
+        <answer>Jani5</answer>
+    </all_answers>    
+    </note>
+
+    <note>
+    <question>Tove6</question>
+    <answer>Jani6</answer>
+    <difficulty>6</difficulty>
+    <all_answers>
+        <answer>Jani1</answer>
+        <answer>Jani2</answer>
+        <answer>Jani3</answer>
+        <answer>Jani4</answer>
+        <answer>Jani5</answer>
+    </all_answers>    
+    </note>
+
+    <note>
+    <question>Tove7</question>
+    <answer>Jani7</answer>
+    <difficulty>7</difficulty>
+    <all_answers>
+        <answer>Jani1</answer>
+        <answer>Jani2</answer>
+        <answer>Jani3</answer>
+        <answer>Jani4</answer>
+        <answer>Jani5</answer>
+    </all_answers>    
+    </note>
+
+
+    <note>
+    <question>Tove8</question>
+    <answer>Jani8</answer>
+    <difficulty>8</difficulty>
+    <all_answers>
+        <answer>Jani1</answer>
+        <answer>Jani2</answer>
+        <answer>Jani3</answer>
+        <answer>Jani4</answer>
+        <answer>Jani5</answer>
+    </all_answers>    
+    </note>
+
+    <note>
+    <question>Tove9</question>
+    <answer>Jani9</answer>
+    <difficulty>9</difficulty>
+    <all_answers>
+        <answer>Jani1</answer>
+        <answer>Jani2</answer>
+        <answer>Jani3</answer>
+        <answer>Jani4</answer>
+        <answer>Jani5</answer>
+    </all_answers>    
+    </note>
+</questions>
