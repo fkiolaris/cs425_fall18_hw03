@@ -14,28 +14,28 @@
     </note>
 
     <note>
-    <question>1+2</question>
-    <answer>2</answer>
-    <difficulty>1</difficulty>
+    <question>3-2</question>
+    <answer>0</answer>
+    <difficulty>2</difficulty>
     <all_answers>
         <answer>1</answer>
-        <answer>2</answer>
-        <answer>3</answer>
-        <answer>4</answer>
         <answer>5</answer>
+        <answer>3</answer>
+        <answer>6</answer>
+        <answer>3</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>3+1</question>
-    <answer>3</answer>
-    <difficulty>1</difficulty>
+    <question>3*1</question>
+    <answer>2</answer>
+    <difficulty>3</difficulty>
     <all_answers>
-        <answer>1</answer>
+        <answer>4</answer>
         <answer>2</answer>
         <answer>3</answer>
-        <answer>4</answer>
-        <answer>5</answer>
+        <answer>42</answer>
+        <answer>3</answer>
     </all_answers>
     </note>
 
@@ -44,77 +44,77 @@
     <answer>4</answer>
     <difficulty>1</difficulty>
     <all_answers>
-        <answer>1</answer>
+        <answer>8</answer>
         <answer>2</answer>
         <answer>3</answer>
-        <answer>4</answer>
+        <answer>2</answer>
         <answer>5</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>1+1</question>
+    <question>1-1</question>
     <answer>1</answer>
-    <difficulty>1</difficulty>
+    <difficulty>2</difficulty>
     <all_answers>
-        <answer>1</answer>
-        <answer>2</answer>
+        <answer>43</answer>
+        <answer>0</answer>
         <answer>3</answer>
-        <answer>4</answer>
-        <answer>5</answer>
+        <answer>6</answer>
+        <answer>22</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>1+1</question>
-    <answer>1</answer>
-    <difficulty>1</difficulty>
+    <question>4*3</question>
+    <answer>0</answer>
+    <difficulty>3</difficulty>
     <all_answers>
-        <answer>1</answer>
-        <answer>2</answer>
-        <answer>3</answer>
+        <answer>12</answer>
+        <answer>23</answer>
+        <answer>43</answer>
         <answer>4</answer>
-        <answer>5</answer>
+        <answer>53</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>1+1</question>
-    <answer>1</answer>
+    <question>1+3</question>
+    <answer>3</answer>
     <difficulty>1</difficulty>
     <all_answers>
-        <answer>1</answer>
-        <answer>2</answer>
-        <answer>3</answer>
-        <answer>4</answer>
         <answer>5</answer>
+        <answer>2</answer>
+        <answer>6</answer>
+        <answer>4</answer>
+        <answer>12</answer>
     </all_answers>
     </note>
 
 
     <note>
-    <question>1+1</question>
-    <answer>1</answer>
-    <difficulty>1</difficulty>
+    <question>1-4</question>
+    <answer>2</answer>
+    <difficulty>2</difficulty>
     <all_answers>
-        <answer>1</answer>
-        <answer>2</answer>
-        <answer>3</answer>
+        <answer>13</answer>
+        <answer>42</answer>
+        <answer>-3</answer>
         <answer>4</answer>
-        <answer>5</answer>
+        <answer>52</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>1+1</question>
-    <answer>1</answer>
-    <difficulty>1</difficulty>
+    <question>1*4</question>
+    <answer>3</answer>
+    <difficulty>3</difficulty>
     <all_answers>
-        <answer>1</answer>
+        <answer>7</answer>
         <answer>2</answer>
         <answer>3</answer>
         <answer>4</answer>
-        <answer>5</answer>
+        <answer>6</answer>
     </all_answers>
     </note>
 </questions>

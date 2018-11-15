@@ -19,8 +19,51 @@ session_start(); ?>
 
 <?php
 
+function findNext($array, $curPos, $diff, $moreDifficulty){
+  $counter = 0;
+  $size = count($array);
+  
+  $nextDifficulty = 0;
+    //    echo "<script>";
+    //  echo "alert($diff);";
+    //  echo "</script>";
 
-$ans1 = $ans2 = $ans3 = $ans4 = $ans5 = "";
+  if ($moreDifficulty) {
+    switch($diff){
+      case 1: $nextDifficulty = 2;
+      break;
+      case 2: $nextDifficulty = 3; 
+      break;
+      case 3: $nextDifficulty = 3;  
+      break;
+    }
+  }else{
+    switch($diff){
+      case 1: $nextDifficulty = 1;
+      break;
+      case 2: $nextDifficulty = 1; 
+      break;
+      case 3: $nextDifficulty = 2;  
+      break;
+    }
+  }
+
+  $curPos ++;
+  while ($counter < $size){
+
+    if ($curPos == $size) $curPos = 0;
+    
+    $element = $array[$curPos];
+    if ( $element->difficulty == $nextDifficulty) return $curPos;
+    else {
+      $counter ++;
+      $curPos ++ ;
+    }
+  }
+  return 0;
+}
+
+$question = $ans1 = $ans2 = $ans3 = $ans4 = $ans5 = "";
 
 $_SESSION["flag1"] =  true;
 $_SESSION["flag2"] =  false;
@@ -29,11 +72,13 @@ $answers = array();
 $nextTruthAns = 0;
 $truthAns = false;
 $userAns = false;
+$difficulty = 0;
 
 if (isset($_GET['start'])) {
   $_SESSION["flag1"] =  false;
   $_SESSION["flag2"] =  true;
   $_SESSION["answers"] = $answers;
+  $_SESSION["CURRENT_ARRAY_POS"] = 0;
 
   $passedArray = array();
   $xml = simplexml_load_file('questions.xml');
@@ -43,18 +88,29 @@ if (isset($_GET['start'])) {
   shuffle($passedArray);
   $arraySize = count($passedArray);
   $_SESSION["array_size"] = $arraySize;
-  $objectArray = json_encode($passedArray);
-
-  $_SESSION["array"] =  $objectArray;
+  $_SESSION["array"] =  json_encode($passedArray);
 
   $arrayPosition = 0;
   $_SESSION["array_position"] = $arrayPosition;
-  $ans1 = $passedArray[$arrayPosition]->all_answers->answer[0];
-  $ans2 = $passedArray[$arrayPosition]->all_answers->answer[1];
-  $ans3 = $passedArray[$arrayPosition]->all_answers->answer[2];
-  $ans4 = $passedArray[$arrayPosition]->all_answers->answer[3];
-  $ans5 = $passedArray[$arrayPosition]->all_answers->answer[4];
-  $nextTruthAns = $passedArray[$arrayPosition]->answer;
+
+  $element = null;
+  $size = count($passedArray);
+  $counter = 0;
+
+  $position = findNext($passedArray, -1, 1, true);
+  $element = $passedArray[$position];
+
+  $ans1 = $element->all_answers->answer[0];
+  $ans2 = $element->all_answers->answer[1];
+  $ans3 = $element->all_answers->answer[2];
+  $ans4 = $element->all_answers->answer[3];
+  $ans5 = $element->all_answers->answer[4];
+  $question = $element->question;
+  $nextTruthAns = $element->answer;
+  $difficulty = $element->difficulty;
+
+  $_SESSION["CURRENT_ARRAY_POS"] = $position;
+  // $_SESSION["difficulty"] = $difficulty;
 }
 
 if (isset($_POST['next'])) {
@@ -64,25 +120,49 @@ if (isset($_POST['next'])) {
   $arrayPosition =  $_SESSION["array_position"];
   $answers = $_SESSION["answers"];
   $arrayPosition ++;
+  $value = "";
+  $currentPosition = $_SESSION["CURRENT_ARRAY_POS"];
+  $moreDifficulty;
 
-  if ($arraySize > $arrayPosition){
- 
+  if ($arrayPosition < 9){
+    
     $passedArray = json_decode($_SESSION["array"]);
-
     $truthAns = $_POST["truthAns"];
     $userAns = $_POST["ans"];
+    $difficulty = $_POST["difficulty"];
+  
+    if ($truthAns == $userAns){
+       $answers[] = true;
+       $moreDifficulty = true;
+    //   echo "<script>";
+    //  echo "alert('TRUE');";
+    //  echo "</script>";
+      $answers[] = true;
+     }
+     else{
+       $answers[] = false;
+       $moreDifficulty = false;
 
-    $ans1 = $passedArray[$arrayPosition]->all_answers->answer[0];
-    $ans2 = $passedArray[$arrayPosition]->all_answers->answer[1];
-    $ans3 = $passedArray[$arrayPosition]->all_answers->answer[2];
-    $ans4 = $passedArray[$arrayPosition]->all_answers->answer[3];
-    $ans5 = $passedArray[$arrayPosition]->all_answers->answer[4];
-    $nextTruthAns = $passedArray[$arrayPosition]->answer;
+     }
+ 
 
-    $_SESSION["array"] = json_encode($passedArray);
+    $position = findNext($passedArray, $currentPosition, $difficulty, $moreDifficulty);
+    $element = $passedArray[$position];
+    // $_SESSION["array"] =  json_encode($passedArray);
+
+    $ans1 = $element->all_answers->answer[0];
+    $ans2 = $element->all_answers->answer[1];
+    $ans3 = $element->all_answers->answer[2];
+    $ans4 = $element->all_answers->answer[3];
+    $ans5 = $element->all_answers->answer[4];
+    $question = $element->question;
+    $nextTruthAns = $element->answer;
+    $difficulty = $element->difficulty;
+   
     $_SESSION["array_position"] = $arrayPosition;
+    $_SESSION["CURRENT_ARRAY_POS"] = $position;
 
-    if ($arraySize - 1 == $arrayPosition) $finish = true;
+    if ($arrayPosition + 1 == 9) $finish = true;
 
   }else{
     
@@ -140,7 +220,7 @@ if ($_SESSION["flag2"]) {
     <!-- <button id="startButton">Start Game</button> -->
     <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
       <div class="row">
-      <h2 name="quest"><?php echo json_decode($_SESSION["array"])[$_SESSION["array_position"]]->question ?></h2>
+      <h2 name="quest"><?php echo $question ?></h2>
       <div class="align_right_top">
         <span><?php echo ($_SESSION["array_position"] +1 ); ?></span>
       <span><?php echo "/" ?></span>
@@ -148,6 +228,7 @@ if ($_SESSION["flag2"]) {
     </div>
     </div>
       <input type="hidden"  name="truthAns" value = <?php echo $nextTruthAns ?>>
+      <input type="hidden"  name="difficulty" value = <?php echo $difficulty ?>>
       <div class="row">
       <div class="col-25">
       <input type="radio" id="radio1" name="ans" value = 0 checked >
@@ -204,18 +285,18 @@ if ($_SESSION["flag2"]) {
 </div>
 </div>
 
-<?php     if ($truthAns == $userAns){
-     echo "<script>";
-     echo "alert('TRUE');";
-     echo "</script>";
-      $answers[] = true;
-    }
-    else{
-      echo "<script>";
-      echo "alert('FALSE');";
-      echo "</script>";
-      $truthAnsersArray[] = false;
-    } ?>
-    
+<?php  //   if ($truthAns == $userAns){
+    //  echo "<script>";
+    //  echo "alert('TRUE');";
+    //  echo "</script>";
+    //   $answers[] = true;
+    // }
+    // else{
+    //   echo "<script>";
+    //   echo "alert('FALSE');";
+    //   echo "</script>";
+    //   $answers[] = false;
+ //   } ?>
+
 </body>
 </html>
