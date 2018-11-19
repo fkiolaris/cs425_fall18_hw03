@@ -21,7 +21,7 @@ session_start(); ?>
 </head>
 <body class="main_page_backround">
 
-<nav class="navbar navbar-expand-md navbar-dark navbar_backround">
+<nav class="navbar navbar-expand-md navbar-dark navbar_backround sticky-top">
   <a class="navbar-brand" href="#">Quizzer</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -57,9 +57,9 @@ session_start(); ?>
   </div>
   <table class="table table-hover" id="table_body">
     <thead>
-      <tr>
-        <th>Player Nickname</th>
-        <th>Score</th>
+      <tr id = "scores_row">
+        <th><h2>Player Nickname</h2></th>
+        <th><h2>Score</h2></th>
       </tr>
     </thead>
 
@@ -67,13 +67,15 @@ session_start(); ?>
 
     <?php
     $counter = 0;
-    $answers = $_SESSION["answers"];
-    foreach ($scores as $data){?>
-        <tr>
-        <td><?php echo $data->nickname ?></td>
-        <td><?php echo $data->score ?></td>
-      </tr> 
-  <?php } ?>
+    if (isset($_SESSION["answers"])) $answers = $_SESSION["answers"];
+    if (isset($scores)){
+      foreach ($scores as $data){?>
+          <tr>
+          <td><h2><?php echo $data->nickname ?></h2></td>
+          <td><h2><?php echo $data->score ?></h2></td>
+        </tr> 
+        <?php } 
+    }?>
     </tbody>
 
   </table>

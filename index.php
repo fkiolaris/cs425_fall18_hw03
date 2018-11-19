@@ -133,6 +133,7 @@ if (isset($_GET['start'])) {
 }
 
 if (isset($_POST['next']) || isset($_POST['finish'])) {
+
     $_SESSION["flag2"] = true;
     $_SESSION["flag1"] = false;
     
@@ -149,7 +150,9 @@ if (isset($_POST['next']) || isset($_POST['finish'])) {
         
         $passedArray = json_decode($_SESSION["array"]);
         $truthAns    = $_POST["truthAns"];
-        $userAns     = $_POST["ans"];
+
+        $userAns = "-1";
+        if (isset($_POST["ans"])) $userAns     = $_POST["ans"];
         $difficulty  = $_POST["difficulty"];
         
         $data        = new stdClass();
@@ -193,14 +196,15 @@ if (isset($_POST['next']) || isset($_POST['finish'])) {
     }
     
     if (isset($_POST['finish'])) {
-        $_SESSION["flag3"] = true;
-        $_SESSION["flag2"] = false;
+
+      $_SESSION["flag3"] = true;
+      $_SESSION["flag2"] = false;
     }
 }
 
 $succesfulSaveFlag = "";
 if (isset($_POST['save'])) {
-    
+
     $data           = new stdClass();
     $data->nickname = $_POST['nickname'];
     $data->score    = $_SESSION["SCORE"];
@@ -214,11 +218,14 @@ if (isset($_POST['save'])) {
     if (file_put_contents('results.json', $jsonData)) $succesfulSaveFlag = SAVE;
     else $succesfulSaveFlag = NOT_SAVE;
 
+    $_SESSION["flag3"] = true;
+    $_SESSION["flag2"] = false;
+    $_SESSION["flag1"] = false;
 }
+
 ?>
 
-
-<nav class="navbar navbar-expand-md navbar-dark navbar_backround">
+<nav class="navbar navbar-expand-md navbar-dark navbar_backround sticky-top">
   <a class="navbar-brand" href="#">Quizzer</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -243,23 +250,18 @@ if ($_SESSION["flag1"]) {
 ?>
 
 <div>
-  <div id="image_backround_container" class="container">
+  <div class="container" id="image_backround_container" style="background-image:url('images/quiz_time.jpg');height:700px;">
 
           <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
-          <div>
-            <h1 id="welcome_message"><b>Welcome to quizzer!!</b></h1>
-            <div >
-      <?php if ($succesfulSaveFlag == SAVE) { ?>
-        <div class="w3-panel w3-green w3-display-container" id="alert_message_success">
-          <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
-          <h3>Success!</h3>
-          <p>Your score save success!!.</p>
-        </div>
-      <?php } else if ($succesfulSaveFlag == NOT_SAVE){?>
-      <?php } ?>
-  </div>
-            <input type="submit"  value="Start Game" name="start">
-          <div>
+            <div>
+              <h1 id="welcome_message"><b>Welcome to quizzer!!</b></h1>
+              <div>
+
+              </div>
+              <div class="wrapper">
+                <input type="submit"  value="Start Game" name="start" id="startButton">
+              </div>
+            <div>
         </form>
   </div>
 
@@ -271,7 +273,7 @@ if ($_SESSION["flag1"]) {
 <?php
 if ($_SESSION["flag2"]) { ?>
 
-<div id="image_backround_container" class="container">
+<div id="image_backround_container" class="container" >
 
     <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
    
@@ -290,7 +292,7 @@ if ($_SESSION["flag2"]) { ?>
       </div>
 
       <div class="radio">
-        <label><input type="radio" name="ans" checked value = 0><?php echo $ans1?></label>
+        <label><input type="radio" name="ans" value = 0><?php echo $ans1?></label>
       </div>
 
       <div class="radio">
@@ -328,6 +330,22 @@ if ($_SESSION["flag2"]) { ?>
 if ($_SESSION["flag3"]) {
 ?>
 
+                <?php if ($succesfulSaveFlag == SAVE) { ?>
+                  <div class="w3-panel w3-green w3-display-container" id="alert_message_success">
+                    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+                    <h3>Success!</h3>
+                    <p>Your score save success!!.</p>
+                    <meta http-equiv="refresh" content="2">
+                  </div>
+                 <?php } else if ($succesfulSaveFlag == NOT_SAVE){?>
+                  <div class="w3-panel w3-green w3-display-container" id="alert_message_success">
+                    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+                    <h3>Failed!</h3>
+                    <p>Your score has not save success!!.</p>
+                    <meta http-equiv="refresh" content="2">
+                  </div>
+                 <?php } ?>
+
 <div id="image_backround_container" class="container">
 
     <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -338,9 +356,9 @@ if ($_SESSION["flag3"]) {
     <table id="table_body" class="table ">
       <thead>
         <tr id = "scores_row">
-          <th>Question:</th>
-          <th>Level</th>
-          <th>Score</th>
+          <th><h2>Question</h2></th>
+          <th><h2>Level</h2></th>
+          <th><h2>Score</h2></th>
         </tr>
       </thead>
 
@@ -353,19 +371,19 @@ if ($_SESSION["flag3"]) {
     foreach ($answers as $data) {
         if ($data->answer) { ?>
          <tr>
-          <td><?php
-            echo ++$counter; ?></td>
-          <td><?php
-            echo $data->level; ?></td>
-          <td style="color:green">Success</td>
+          <td><h2><?php
+            echo ++$counter; ?></h2></td>
+          <td><h2><?php
+            echo $data->level; ?></h2></td>
+          <td style="color:green"><h2><?php echo $data->level; ?></h2></td>
         </tr> 
       <?php } else { ?>
         <tr>
-          <td><?php
-            echo ++$counter; ?></td>
-          <td><?php
-            echo $data->level;?></td>
-          <td style="color:red">Failed</td>
+          <td><h2><?php
+            echo ++$counter; ?></h2></td>
+          <td><h2><?php
+            echo $data->level;?></h2></td>
+          <td style="color:red"><h2>Failed</h2></td>
         </tr> 
       <?php
         } 
@@ -377,7 +395,7 @@ if ($_SESSION["flag3"]) {
     </div>
 
     <div class="row">
-      <p>Your overall score: <?php echo $_SESSION["SCORE"] ?></p> 
+      <p id="score_message">Your overall score: <?php echo $_SESSION["SCORE"] ?></p> 
     </div>
 
     <div class="row half_row">

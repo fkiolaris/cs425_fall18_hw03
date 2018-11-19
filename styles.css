@@ -1,28 +1,29 @@
 #startButton{
-    background-color: darkblue; /* Green */
-    font-size: 50px;
-    border: none;
-    color: white;
-    padding:  10% 5% 10% 5%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 50%;
-    cursor: pointer;    
-    margin-bottom: 20%;
-    margin-right: 10%;
-    /* padding: 10%; */
-    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    text-align: center; 
+    /* top: 50%; */
+    width: 30%;
+    left: 35%;
+    right:35%;
 }
 
 #startButton:hover{
     background-color: rgb(28, 28, 61); /* Green */
 }
 
+.wrapper {
+    text-align: center;
+}
+
 
  
 .navbar_backround{
     background-color:  rgba(26, 30, 32, 0.459);
+}
+
+.sticky-top{
+    position: sticky !important;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
     min-height: 100%;
     font-family: "Helvetica Neue", Arial, sans-serif;
     background-image:url("images/quiz_background.jpg");
-    background-size: cover;
+    /* background-size: cover; */
   }
 
 html {
@@ -71,6 +72,7 @@ html {
     text-align: center;
     background-color: rgba(37, 38, 39, 0.493);
     color: white;
+    position: relative;
 }
 
 div.parent {
@@ -106,9 +108,9 @@ div.sticky_center {
 
 h2{
   text-align: center;
-  border-radius: 10px;
+  /* border-radius: 10px;
   border: 3px solid rgba(49, 46, 46, 0.233);
-  background-color: rgba(33, 34, 33, 0.473);
+  background-color: rgba(33, 34, 33, 0.473); */
 }
 
 .container_backround{
@@ -191,12 +193,31 @@ input[type=submit]:hover {
     float: left;
     width: 50%;
     margin-top: 6px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
+}
+
+.help_data_format{
+    font-weight: bold;
+    font-size: large;
+    background-color: rgba(19, 18, 17, 0.205);  
+    padding: 0.4%;  
+}
+
+
+.help_description{
+    padding: 0.4%; 
+    font-size: medium;
+    background-color: rgba(19, 18, 17, 0.205);  
+}
+
+.help{
+    padding: 4%;
 }
 
 .half_row{
@@ -216,28 +237,29 @@ input[type=submit]:hover {
     min-height: 500px;
 }
 
+/* .help{
+    
+} */
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .col-25, .col-75, .col-50, input[type=submit] {
         width: 100%;
         margin-top: 0;
+        text-align: center;
     }
 
+    .help{
+        padding: 0%;
+    }
     #startButton{
-        background-color: darkblue; /* Green */
-        font-size: xx-large;
-        border: none;
-        color: white;
-        padding:  1% 5% 1% 5%;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 3%;
-        cursor: pointer;    
-        width: 100%;
-        padding: 5%;
-        margin-bottom: 0%;
-        margin-right: 0%;
+        position: absolute;
+        /* top: 50%; */
+        bottom: 10%;
+        width: 90%;
+        left: 5%;
+        right:5%;
+
     }
 
     .inner_container{
@@ -329,13 +351,10 @@ table{
     padding: 1%;
 }
 
-/* #table_body{
-    background-color: rgb(76, 129, 129) !important;
-} */
 
 .footer {
     position:absolute;
-    bottom:0;
+    bottom: 0;
     width: 100%;
     background-color: #3539494f;    
     text-align: center;
@@ -403,3 +422,20 @@ table{
 #alert_message_success{
     background-color: rgba(184, 184, 184, 0.678) !important;
 }
+
+#score_message{
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 1%;
+    background-color: rgba(34, 33, 33, 0.616);
+    border-radius: 10px;
+}
+
+#score_message:hover{
+    background-color: rgba(44, 43, 43, 0.849);
+    padding: 1%;
+    border-radius: 10px;
+    color: rgba(236, 233, 233, 0.877);
+}
+

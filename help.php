@@ -42,6 +42,52 @@ session_start(); ?>
   </div>  
 </nav>
 
+  <div class="container" id="image_backround_container">
+
+  <div class="help">
+    <div>
+      <h2>HOME PAGE</h2>
+      <div class="row">
+        <div class="col-50 help_data_format">START GAME:</div>
+        <div class="col-50 help_description">Press this button to start the game</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-50 help_data_format">NEXT:</div>
+        <div class="col-50 help_description">Press this button to move to the next question</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-50 help_data_format">EXIT:</div>
+        <div class="col-50 help_description">Press this button to clsoe the game</div>
+      </div>
+      <br>
+      <div class="row"> 
+        <div class="col-50 help_data_format">FINISH:</div>
+        <div class="col-50 help_description">Press this button in last question to finish the game</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-50 help_data_format">SAVE:</div>
+        <div class="col-50 help_description">Press this button to save the your score with some nickname.</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-50 help_data_format">END GAME:</div>
+        <div class="col-50 help_description">Press this button to end the game.</div>          
+      </div>
+    </div>
+
+    <div>
+      <h2>HIGH SCORE PAGE</h2>
+      <div class="row">
+        <div class="col-50 help_data_format">Description:</div>
+        <div class="col-50 help_description">Shows the scores of users.</div>          
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
