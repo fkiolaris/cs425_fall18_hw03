@@ -7,6 +7,12 @@ session_start();
 <html lang="en">
 <head>
   <title>Home Page</title>
+  <meta name="author" content="Nikolas Violaris">
+  <meta name="description" content="Main page game.. Here you play the game.">
+  <meta name="keywords" content="HTML,CSS, PHP">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/quiz.jpg"/>  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -19,6 +25,8 @@ session_start();
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
      
 </head>
 <body class="main_page_backround">
@@ -75,7 +83,7 @@ function findNext($array, $curPos, $diff, $moreDifficulty)
     return 0;
 }
 
-$question = $ans1 = $ans2 = $ans3 = $ans4 = $ans5 = "";
+$question = $ans1 = $ans2 = $ans3 = $ans4 = "";
 
 $_SESSION["flag1"] = true;
 $_SESSION["flag2"] = false;
@@ -124,7 +132,6 @@ if (isset($_GET['start'])) {
     $ans2         = $element->all_answers->answer[1];
     $ans3         = $element->all_answers->answer[2];
     $ans4         = $element->all_answers->answer[3];
-    $ans5         = $element->all_answers->answer[4];
     $question     = $element->question;
     $nextTruthAns = $element->answer;
     $difficulty   = $element->difficulty;
@@ -178,7 +185,6 @@ if (isset($_POST['next']) || isset($_POST['finish'])) {
         $ans2         = $element->all_answers->answer[1];
         $ans3         = $element->all_answers->answer[2];
         $ans4         = $element->all_answers->answer[3];
-        $ans5         = $element->all_answers->answer[4];
         $question     = $element->question;
         $nextTruthAns = $element->answer;
         $difficulty   = $element->difficulty;
@@ -233,13 +239,13 @@ if (isset($_POST['save'])) {
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="index.php">Home Page</a>
+        <a class="nav-link active" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="help.php">Help Page</a>
+        <a class="nav-link" href="help.php">Help</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="highscores.php">High Scores Page</a>
+        <a class="nav-link" href="highscores.php">High Scores</a>
       </li>    
     </ul>
   </div>  
@@ -273,15 +279,15 @@ if ($_SESSION["flag1"]) {
 <?php
 if ($_SESSION["flag2"]) { ?>
 
-<div id="image_backround_container" class="container" >
+<div id="image_backround_container" class="container questionsFrom">
 
-    <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="modifyForm">
    
       <input type="hidden"  name="truthAns" value = <?php echo $nextTruthAns; ?>>
       <input type="hidden"  name="difficulty" value = <?php echo $difficulty; ?>>
 
-      <div class="row" >
-        <div class="start_message"  style="text-align:right;">
+      <!-- <div class="row" > -->
+        <div class="start_message"  style="text-align:left;">
         <span id="circle_word"><span><?php echo ($_SESSION["array_position"] + 1);?></span>
         <span><?php echo "/"; ?></span>
         <span><?php echo QUESTIONS ?></span></span>
@@ -289,7 +295,7 @@ if ($_SESSION["flag2"]) { ?>
         <span><b>Question:</b><?php echo $question;?></b></span></p>
         </span>
         </div>
-      </div>
+      <!-- </div> -->
 
       <div class="radio">
         <label><input type="radio" name="ans" value = 0><?php echo $ans1?></label>
@@ -307,17 +313,20 @@ if ($_SESSION["flag2"]) { ?>
         <label><input type="radio" name="ans" value = 3><?php echo $ans4?></label>
       </div>
 
-      <div class="radio">
-        <label><input type="radio" name="ans" value = 4><?php echo $ans5?></label>
-      </div>
           
-      <p class="row">
-        <div class="column">       
+      <div class="row">
+        <div class="col-50">       
           <?php if ($finish) { ?><input type="submit" id="finishButton" value="Finish" name="finish">
           <?php } else { ?> 
           <input type="submit" id="nextButton" value="Next" name="next">
-          <?php } ?> <input type="submit" id="endButton" value="End Game">
-      </p>
+          <?php } ?> 
+        </div>
+        
+        <div class="col-50">   
+          <input type="submit" id="endButton" value="End Game">
+        </div>    
+
+      </div>
           
     </form>
 </div>
@@ -356,9 +365,9 @@ if ($_SESSION["flag3"]) {
     <table id="table_body" class="table ">
       <thead>
         <tr id = "scores_row">
-          <th><h2>Question</h2></th>
-          <th><h2>Level</h2></th>
-          <th><h2>Score</h2></th>
+          <th><p>Question</p></th>
+          <th><p>Level</p></th>
+          <th><p>Score</p></th>
         </tr>
       </thead>
 
@@ -371,19 +380,19 @@ if ($_SESSION["flag3"]) {
     foreach ($answers as $data) {
         if ($data->answer) { ?>
          <tr>
-          <td><h2><?php
-            echo ++$counter; ?></h2></td>
-          <td><h2><?php
-            echo $data->level; ?></h2></td>
-          <td style="color:green"><h2><?php echo $data->level; ?></h2></td>
+          <td><p><?php
+            echo ++$counter; ?></p></td>
+          <td><p><?php
+            echo $data->level; ?></p></td>
+          <td style="color:green"><p><?php echo $data->level; ?></p></td>
         </tr> 
       <?php } else { ?>
         <tr>
-          <td><h2><?php
-            echo ++$counter; ?></h2></td>
-          <td><h2><?php
-            echo $data->level;?></h2></td>
-          <td style="color:red"><h2>Failed</h2></td>
+          <td><p><?php
+            echo ++$counter; ?></p></td>
+          <td><p><?php
+            echo $data->level;?></p></td>
+          <td style="color:red"><p>Failed</p></td>
         </tr> 
       <?php
         } 
@@ -394,16 +403,24 @@ if ($_SESSION["flag3"]) {
     </table>
     </div>
 
+
     <div class="row">
-      <p id="score_message">Your overall score: <?php echo $_SESSION["SCORE"] ?></p> 
+      <div class="col-50">  
+       <p id="score_message">Your overall score: <?php echo $_SESSION["SCORE"] ?></p> 
+      </div>
+      <div class="col-50">  
+        <input type="text" id="nickname" name="nickname" value="Your nickname:">    
+      </div>
     </div>
 
-    <div class="row half_row">
-      <input type="text" id="nickname" name="nickname" value="Your nickname:">    
+    <div class="row">
+      <div class="col-50">  
+        <input type="submit" id="saveButton" value="Save" name="save">
+      </div>
+      <div class="col-50">  
+        <input type="submit" id="returnButton" value="Exit" name="return">
+      </div>
     </div>
-
-    <input type="submit" id="saveButton" value="Save" name="save">
-    <input type="submit" id="returnButton" value="Exit" name="return">
 
     </form>
 

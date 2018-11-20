@@ -12,18 +12,17 @@
     background-color: rgb(28, 28, 61); /* Green */
 }
 
-.wrapper {
-    text-align: center;
-}
-
-
- 
 .navbar_backround{
     background-color:  rgba(26, 30, 32, 0.459);
 }
 
 .sticky-top{
     position: sticky !important;
+}
+
+.main_page_image{
+    background-image:url('images/quiz_time.jpg') !important;
+    height:700px !important;
 }
 
 body {
@@ -33,13 +32,28 @@ body {
     min-height: 100%;
     font-family: "Helvetica Neue", Arial, sans-serif;
     background-image:url("images/quiz_background.jpg");
-    /* background-size: cover; */
-  }
+}
+
+.questionsFrom{
+    height: 700px !important;
+    max-height: 800px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modifyForm{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 html {
     height: 100%;
     box-sizing: border-box;
-  }
+}
 
 
 *,
@@ -67,6 +81,7 @@ html {
 .start_message {
     height: auto;
     width: 100%;
+    margin: 0.3%;
     font-size: xx-large;
     padding: 2% 5% 2% 5%;
     text-align: center;
@@ -129,18 +144,27 @@ h2{
 
 #nextButton{
   float: right;
+  width: 100%;
 }
+
+#finishButton{
+    float: right;
+    width: 100%;
+  }
 
 #endButton{
     float: left;
+    width: 100%;
 }
 
 #returnButton{
     float: right;
+    width: 100%;
 }
 
 #saveButton{
     float: left;
+    width: 100%;
 }
 
 #nickname{
@@ -221,8 +245,10 @@ input[type=submit]:hover {
 }
 
 .half_row{
-    width: 25%;
+    width: 25% !important;
     padding: 0.5%;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
 }
 
 /* Clear floats after the columns */
@@ -236,6 +262,26 @@ input[type=submit]:hover {
     height: 700px;
     min-height: 500px;
 }
+
+p{
+    text-align: center;
+    font-size: x-large;
+}
+
+#score_message{
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 1.5%;
+    background-color: rgba(34, 33, 33, 0.616);
+}
+
+#score_message:hover{
+    background-color: rgba(44, 43, 43, 0.849);
+    padding: 1.5%;
+    color: rgba(236, 233, 233, 0.877);
+}
+
 
 /* .help{
     
@@ -252,9 +298,13 @@ input[type=submit]:hover {
     .help{
         padding: 0%;
     }
+
+    .main_page_image{
+        height:auto !important;
+    }
+
     #startButton{
         position: absolute;
-        /* top: 50%; */
         bottom: 10%;
         width: 90%;
         left: 5%;
@@ -271,13 +321,45 @@ input[type=submit]:hover {
     }
 
     .container{
-            height: 100%;
+            height: auto !important;
     }
 
     .half_row{
-        width:100%;
-        text-align: center;
+        width:100% !important;
+        text-align: center;    
     }
+
+    p{
+        text-align: center;
+        font-size: medium;
+    }
+
+    #score_message{
+        font-size: medium;
+        width: 100%;
+    }
+
+    #score_message:hover{
+        background-color: rgba(44, 43, 43, 0.849);
+        width: 100%;
+    }
+
+    .questionsFrom{
+        height: 100% !important;
+        min-height: 100% !important;
+        max-height: 100% !important;
+    }
+    
+    .modifyForm{
+        height: auto !important;
+    }
+
+    .start_message {
+        margin: 0;
+        font-size: medium;
+        padding: 0;
+    }
+    
 }
 
 .row{
@@ -296,10 +378,17 @@ input[type=submit]:hover {
 }
 
 form{
-    padding-left: 2% !important;
-    padding-right: 2% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     height: 100%;
 }
+
+/* .playForm{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+} */
 
 label{
     width: 80%;
@@ -423,19 +512,4 @@ table{
     background-color: rgba(184, 184, 184, 0.678) !important;
 }
 
-#score_message{
-    font-size: x-large;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    padding: 1%;
-    background-color: rgba(34, 33, 33, 0.616);
-    border-radius: 10px;
-}
-
-#score_message:hover{
-    background-color: rgba(44, 43, 43, 0.849);
-    padding: 1%;
-    border-radius: 10px;
-    color: rgba(236, 233, 233, 0.877);
-}
 

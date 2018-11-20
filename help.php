@@ -5,7 +5,13 @@ session_start(); ?>
 
 <html lang="en">
 <head>
-  <title>Home Page</title>
+  <title>Help</title>
+  <meta name="author" content="Nikolas Violaris">
+  <meta name="description" content="Main page game.. Here you play the game.">
+  <meta name="keywords" content="HTML,CSS, PHP">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/help.png"/> 
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -30,13 +36,13 @@ session_start(); ?>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Home Page</a>
+        <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="help.php">Help Page</a>
+        <a class="nav-link active" href="help.php">Help</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="highscores.php">High Scores Page</a>
+        <a class="nav-link" href="highscores.php">High Scores</a>
       </li>    
     </ul>
   </div>  
@@ -88,6 +94,13 @@ session_start(); ?>
   </div>
 </div>
 
+<div class="footer" id="sc">
+  <a href="#sc" class="fab fa-facebook social-media social_icon" id="circle_fb"></a>
+  <a href="#sc" class="fab fa-twitter social-media circle social_icon" id="circle_twit"></a>
+  <a href="#sc" class="fab fa-instagram social-media circle social_icon" id="circle_insta"></a>
+</div>
+
+<div class="nav_right"> <a href="#top" class="fas fa-arrow-up" id="circle_icon_go_up"></a> </div>
 
 </body>
 </html>

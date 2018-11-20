@@ -5,7 +5,13 @@ session_start(); ?>
 
 <html lang="en">
 <head>
-  <title>Home Page</title>
+  <title>High Scores</title>
+  <meta name="author" content="Nikolas Violaris">
+  <meta name="description" content="Main page game.. Here you play the game.">
+  <meta name="keywords" content="HTML,CSS, PHP">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/high_scores.png"/>  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -29,13 +35,13 @@ session_start(); ?>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Home Page</a>
+        <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="help.php">Help Page</a>
+        <a class="nav-link" href="help.php">Help</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="highscores.php">High Scores Page</a>
+        <a class="nav-link active" href="highscores.php">High Scores</a>
       </li>    
     </ul>
   </div>  
@@ -58,8 +64,8 @@ session_start(); ?>
   <table class="table table-hover" id="table_body">
     <thead>
       <tr id = "scores_row">
-        <th><h2>Player Nickname</h2></th>
-        <th><h2>Score</h2></th>
+        <th><p>Player Nickname</p></th>
+        <th><p>Score</p></th>
       </tr>
     </thead>
 
@@ -71,8 +77,8 @@ session_start(); ?>
     if (isset($scores)){
       foreach ($scores as $data){?>
           <tr>
-          <td><h2><?php echo $data->nickname ?></h2></td>
-          <td><h2><?php echo $data->score ?></h2></td>
+          <td><p><?php echo $data->nickname ?></p></td>
+          <td><p><?php echo $data->score ?></p></td>
         </tr> 
         <?php } 
     }?>

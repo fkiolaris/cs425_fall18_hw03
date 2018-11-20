@@ -1,120 +1,1010 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <questions>
     <note>
-    <question>1+1</question>
+    <n>1</n>
+    <question>In which decade was the American Institute of Electrical Engineers (AIEE) founded?</question>
     <answer>1</answer>
     <difficulty>1</difficulty>
     <all_answers>
-        <answer>1</answer>
-        <answer>2</answer>
-        <answer>3</answer>
-        <answer>4</answer>
-        <answer>5</answer>
+        <answer>1850s</answer>
+        <answer>1880s</answer>
+        <answer>1930s</answer>
+        <answer>1950s</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>3-2</question>
+    <n>2</n>
+    <question>What is part of a database that holds only one type of information?</question>
+    <answer>1</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Report</answer>
+        <answer>Field</answer>
+        <answer>Record</answer>
+        <answer>File</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>3</n>
+    <question>'OS' computer abbreviation usually means ?</question>
+    <answer>2</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Order of Significance</answer>
+        <answer>Open Software</answer>
+        <answer>Operating System</answer>
+        <answer>Optical Sensor</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>4</n>
+    <question>In which decade with the first transatlantic radio broadcast occur?</question>
+    <answer>1</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>1850s</answer>
+        <answer>1860s</answer>
+        <answer>1870s</answer>
+        <answer>1900s</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>5</n>
+    <question>'.MOV' extension refers usually to what kind of file?</question>
+    <answer>1</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Image file</answer>
+        <answer>Animation/movie file</answer>
+        <answer>Audio file</answer>
+        <answer>MS Office document</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>6</n>
+    <question>In which decade was the SPICE simulator introduced?</question>
+    <answer>2</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>1950s</answer>
+        <answer>1960s</answer>
+        <answer>1970s</answer>
+        <answer>1980s</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>7</n>
+    <question>Most modern TV's draw power even if turned off. The circuit the power is used in does what function?</question>
+    <answer>1</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Sound</answer>
+        <answer>Remote control</answer>
+        <answer>Color balance</answer>
+        <answer>High voltage</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>8</n>
+    <question>Which is a type of Electrically-Erasable Programmable Read-Only Memory?</question>
+    <answer>0</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Flash</answer>
+        <answer>Flange</answer>
+        <answer>Fury</answer>
+        <answer>FRAM</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>9</n>
+    <question>The purpose of choke in tube light is ?</question>
+    <answer>3</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>To decrease the current</answer>
+        <answer>To increase the current</answer>
+        <answer>To decrease the voltage momentarily</answer>
+        <answer>To increase the voltage momentarily</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>10</n>
+    <question>'.MPG' extension refers usually to what kind of file?</question>
+    <answer>2</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>WordPerfect Document file</answer>
+        <answer>MS Office document</answer>
+        <answer>Animation/movie file</answer>
+        <answer>Image file</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>11</n>
+    <question>Who is largely responsible for breaking the German Enigma codes, created a test that provided a foundation for artificial intelligence?</question>
+    <answer>0</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Alan Turing</answer>
+        <answer>Jeff Bezos</answer>
+        <answer>George Boole</answer>
+        <answer>Charles Babbage</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>12</n>
+    <question>Who developed Yahoo?</question>
+    <answer>3</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Dennis Ritchie, Ken Thompson</answer>
+        <answer>David Filo, Jerry Yang</answer>
+        <answer>Vint Cerf, Robert Kahn</answer>
+        <answer>Steve Case, Jeff Bezos</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>13</n>
+    <question>Made from a variety of materials, such as carbon, which inhibits the flow of current...?</question>
+    <answer>2</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Choke</answer>
+        <answer>Inductor</answer>
+        <answer>Resistor</answer>
+        <answer>Capacitor</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>14</n>
+    <question>The most common format for a home video recorder is VHS. VHS stands for...?</question>
+    <answer>0</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Video Home System</answer>
+        <answer>Very high speed</answer>
+        <answer>Video horizontal standard</answer>
+        <answer>Voltage house standard</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>15</n>
+    <question>What does VVVF stand for?</question>
+    <answer>3</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Variant Voltage Vile Frequency</answer>
+        <answer>Variable Velocity Variable Fun</answer>
+        <answer>Very Very Vicious Frequency</answer>
+        <answer>Variable Voltage Variable Frequency</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>16</n>
+    <question>What frequency range is the High Frequency band?</question>
+    <answer>3</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>100 kHz</answer>
+        <answer>1 GHz</answer>
+        <answer>30 to 300 MHz</answer>
+        <answer>3 to 30 MHz</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>17</n>
+    <question>The first step to getting output from a laser is to excite an active medium. What is this process called?</question>
+    <answer>0</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Pumping</answer>
+        <answer>Exciting</answer>
+        <answer>Priming</answer>
+        <answer>Raising</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>18</n>
+    <question>What is the relationship between resistivity r and conductivity s?</question>
+    <answer>3</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>R = s2</answer>
+        <answer>R = s</answer>
+        <answer>R > s</answer>
+        <answer>R = 1/s</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>19</n>
+    <question>Which motor is NOT suitable for use as a DC machine?</question>
+    <answer>2</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Permanent magnet motor</answer>
+        <answer>Series motor</answer>
+        <answer>Squirrel cage motor</answer>
+        <answer>Synchronous motor</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>20</n>
+    <question>A given signal's second harmonic is twice the given signal's __________ frequency...?</question>
+    <answer>2</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Fourier</answer>
+        <answer>Foundation</answer>
+        <answer>Fundamental</answer>
+        <answer>Field</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>21</n>
+    <question>In which year was MIDI(Musical Instrument Digital Interface) introduced?</question>
+    <answer>1</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>1987</answer>
+        <answer>1983</answer>
+        <answer>1973</answer>
+        <answer>1977</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>22</n>
+    <question>What does the term PLC stand for?</question>
+    <answer>2</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Programmable Lift Computer</answer>
+        <answer>Program List Control</answer>
+        <answer>Programmable Logic Controller</answer>
+        <answer>Piezo Lamp Connector</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>23</n>
+    <question>When measuring the characteristics of a small-signal amplifier, say for a radio receiver, one might be concerned with its "Noise..."?</question>
+    <answer>3</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Fundamental</answer>
+        <answer>Fall</answer>
+        <answer>Force</answer>
+        <answer>Figure</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>24</n>
+    <question>'DB' computer abbreviation usually means ?</question>
+    <answer>0</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Database</answer>
+        <answer>Double Byte</answer>
+        <answer>Data Block</answer>
+        <answer>Driver Boot</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>25</n>
+    <question>'.INI' extension refers usually to what kind of file?</question>
+    <answer>1</answer>
+    <difficulty>1</difficulty>
+    <all_answers>
+        <answer>Image file</answer>
+        <answer>System file</answer>
+        <answer>Hypertext related file</answer>
+        <answer>Image Color Matching Profile file</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>1</n>
+    <question>The sampling rate, (how many samples per second are stored) for a CD is...?</question>
+    <answer>2</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>48.4 kHz</answer>
+        <answer>22,050 Hz</answer>
+        <answer>44.1 kHz</answer>
+        <answer>48 kHz</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>2</n>
+    <question>Who created Pretty Good Privacy (PGP)?</question>
     <answer>0</answer>
     <difficulty>2</difficulty>
     <all_answers>
-        <answer>1</answer>
-        <answer>5</answer>
-        <answer>3</answer>
-        <answer>6</answer>
-        <answer>3</answer>
+        <answer>Phil Zimmermann</answer>
+        <answer>Tim Berners-Lee</answer>
+        <answer>Marc Andreessen</answer>
+        <answer>Ken Thompson</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>3</n>
+    <question>What do we call a network whose elements may be separated by some distance? It usually involves two or more small networks and dedicated high-speed telephone lines.</question>
+    <answer>2</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>URL (Universal Resource Locator)</answer>
+        <answer>LAN (Local Area Network)</answer>
+        <answer>WAN (Wide Area Network)</answer>
+        <answer>World Wide Web</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>4</n>
+    <question>After the first photons of light are produced, which process is responsible for amplification of the light?</question>
+    <answer>1</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Blackbody radiation</answer>
+        <answer>Stimulated emission</answer>
+        <answer>Planck's radiation</answer>
+        <answer>Einstein oscillation</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>5</n>
+    <question>Which is NOT an acceptable method of distributing small power outlets throughout an open plan office area?</question>
+    <answer>3</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Power Poles</answer>
+        <answer>Power Skirting</answer>
+        <answer>Flush Floor Ducting</answer>
+        <answer>Extension Cords</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>6</n>
+    <question>	Sometimes computers and cache registers in a foodmart are connected to a UPS system. What does UPS mean?</question>
+    <answer>3</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>United Parcel Service</answer>
+        <answer>Uniform Product Support</answer>
+        <answer>Under Paneling Storage</answer>
+        <answer>Uninterruptable Power Supply</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>7</n>
+    <question>Who co-founded Hotmail in 1996 and then sold the company to Microsoft?</question>
+    <answer>2</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Shawn Fanning</answer>
+        <answer>Ada Byron Lovelace</answer>
+        <answer>Sabeer Bhatia</answer>
+        <answer>Ray Tomlinson</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>8</n>
+    <question>'.TMP' extension refers usually to what kind of file?</question>
+    <answer>2</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Compressed Archive file</answer>
+        <answer>Image file</answer>
+        <answer>Temporary file</answer>
+        <answer>Audio file</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>9</n>
+    <question>In the UK, what type of installation requires a fireman's switch?</question>
+    <answer>0</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Neon Lighting</answer>
+        <answer>High Pressure Sodium Lighting</answer>
+        <answer>Water Features</answer>
+        <answer>Hotel Rooms</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>10</n>
+    <question>The electromagnetic coils on the neck of the picture tube or tubes which pull the electron beam from side to side and up and down are called a...?</question>
+    <answer>1</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Transformer</answer>
+        <answer>Yoke</answer>
+        <answer>Capacitor</answer>
+        <answer>Diode</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>11</n>
+    <question>In the United States the television broadcast standard is...?</question>
+    <answer>1</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>PAL</answer>
+        <answer>NTSC</answer>
+        <answer>SECAM</answer>
+        <answer>RGB</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>12</n>
+    <question>In a color television set using a picture tube a high voltage is used to accelerate electron beams to light the screen. That voltage is about...?</question>
+    <answer>2</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>500 volts</answer>
+        <answer>5 thousand volts</answer>
+        <answer>25 thousand volts</answer>
+        <answer>100 thousand volts</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>13</n>
+    <question>The transformer that develops the high voltage in a home television is commonly called a...?</question>
+    <answer>1</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Tesla coil</answer>
+        <answer>Flyback</answer>
+        <answer>Yoke</answer>
+        <answer>Van de Graaf</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>14</n>
+    <question>Which consists of two plates separated by a dielectric and can store a charge?</question>
+    <answer>1</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Inductor</answer>
+        <answer>Capacitor</answer>
+        <answer>Transistor</answer>
+        <answer>Relay</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>15</n>
+    <question>What do we call a collection of two or more computers that are located within a limited distance of each other and that are connected to each other directly or indirectly?</question>
+    <answer>2</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Inernet</answer>
+        <answer>Interanet</answer>
+        <answer>Local Area Network</answer>
+        <answer>Wide Area Network</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>16</n>
+    <question>'.JPG' extension refers usually to what kind of file?</question>
+    <answer>3</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>System file</answer>
+        <answer>Animation/movie file</answer>
+        <answer>MS Encarta document</answer>
+        <answer>Image file</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>17</n>
+    <question>What does AM mean?</question>
+    <answer>2</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Angelo marconi</answer>
+        <answer>Anno median</answer>
+        <answer>Amplitude modulation</answer>
+        <answer>Amperes</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>18</n>
+    <question>In what year was the "@" chosen for its use in e-mail addresses?</question>
+    <answer>1</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>1976</answer>
+        <answer>1972</answer>
+        <answer>1980</answer>
+        <answer>1984</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>19</n>
+    <question>'.TXT' extension refers usually to what kind of file?</question>
+    <answer>0</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Text File</answer>
+        <answer>Image file</answer>
+        <answer>Audio file</answer>
+        <answer>Adobe Acrobat file</answer>
+    </all_answers>
+    </note>
+
+    
+    <note>
+    <n>20</n>
+    <question>What was the first ARPANET message?
+
+</question>
+    <answer>0</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>"lo"</answer>
+        <answer>"hello world"</answer>
+        <answer>"mary had a little lamb"</answer>
+        <answer>"cyberspace, the final frontier"</answer>
+    </all_answers>
+    </note>
+
+    
+    <note>
+    <n>21</n>
+    <question>The NTSC (National Television Standards Committee) is also used in the country of...?</question>
+    <answer>0</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Japan</answer>
+        <answer>France</answer>
+        <answer>Germany</answer>
+        <answer>England</answer>
+    </all_answers>
+    </note>
+
+    
+    <note>
+    <n>22</n>
+    <question>"FET" is a type of transistor, Its full name is ________ Effect Transistor...?</question>
+    <answer>0</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Field</answer>
+        <answer>Factor</answer>
+        <answer>Flash</answer>
+        <answer>Force</answer>
+    </all_answers>
+    </note>
+
+    
+    <note>
+    <n>23</n>
+    <question>What are three types of lasers?</question>
+    <answer>3</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Gas, metal vapor, rock</answer>
+        <answer>Pointer, diode, CD</answer>
+        <answer>Diode, inverted, pointer</answer>
+        <answer>Gas, solid state, diode</answer>
+    </all_answers>
+    </note>
+
+    
+    <note>
+    <n>24</n>
+    <question>What will a UPS be used for in a building?</question>
+    <answer>0</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>To provide power to essential equipment</answer>
+        <answer>To monitor building electricity use</answer>
+        <answer>To carry messages between departments</answer>
+        <answer>To control lighting and power systems</answer>
+    </all_answers>
+    </note>
+
+    
+    <note>
+    <n>25</n>
+    <question>Who built the world's first binary digit computer: Z1...?</question>
+    <answer>0</answer>
+    <difficulty>2</difficulty>
+    <all_answers>
+        <answer>Konrad Zuse</answer>
+        <answer>Ken Thompson</answer>
+        <answer>Alan Turing</answer>
+        <answer>George Boole</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>3*1</question>
+    <n>1</n>
+    <question>Compact discs, (according to the original CD specifications) hold how many minutes of music?</question>
+    <answer>0</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>74 mins</answer>
+        <answer>56 mins</answer>
+        <answer>60 mins</answer>
+        <answer>90 mins</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>2</n>
+    <question>Once the active medium is excited, the first photons of light are produced by which physical process?</question>
+    <answer>1</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Blackbody radiation</answer>
+        <answer>Spontaneous emission</answer>
+        <answer>Synchrotron radiation</answer>
+        <answer>Planck’s oscillation</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>3</n>
+    <question>'DTP' computer abbreviation usually means ?</question>
+    <answer>1</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Digital Transmission Protocol</answer>
+        <answer>DeskTop Publishing</answer>
+        <answer>Data Type Programming</answer>
+        <answer>Document Type Processing</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>4</n>
+    <question>The average power (in watts) used by a 20 to 25 inch home color television is...?</question>
+    <answer>0</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>70-100</answer>
+        <answer>25-50</answer>
+        <answer>500-800</answer>
+        <answer>Over 1000</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>5</n>
+    <question>What does AC and DC stand for in the electrical field?</question>
+    <answer>0</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Alternating Current and Direct Current</answer>
+        <answer>A Rock Band from Australia</answer>
+        <answer>Average Current and Discharged Capacitor</answer>
+        <answer>Atlantic City and District of Columbia</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>6</n>
+    <question>In which decade was the ARRL founded?</question>
+    <answer>3</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>1940s</answer>
+        <answer>1930s</answer>
+        <answer>1920s</answer>
+        <answer>1910s</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>7</n>
+    <question>'CD' computer abbreviation usually means ?</question>
+    <answer>3</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Command Description</answer>
+        <answer>Change Data</answer>
+        <answer>Copy Density</answer>
+        <answer>Compact Disc</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>8</n>
+    <question>'.BAK' extension refers usually to what kind of file?</question>
+    <answer>0</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Backup file</answer>
+        <answer>Audio file</answer>
+        <answer>Animation/movie file</answer>
+        <answer>MS Encarta document</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>9</n>
+    <question>Where is the headquarters of Intel located?
+
+</question>
     <answer>2</answer>
     <difficulty>3</difficulty>
     <all_answers>
-        <answer>4</answer>
-        <answer>2</answer>
-        <answer>3</answer>
-        <answer>42</answer>
-        <answer>3</answer>
+        <answer>Redmond, Washington</answer>
+        <answer>Tucson, Arizona</answer>
+        <answer>Santa Clara, California</answer>
+        <answer>Richmond, Virginia</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>3+2</question>
-    <answer>4</answer>
-    <difficulty>1</difficulty>
+    <n>10</n>
+    <question>Who co-created the UNIX operating system in 1969 with Dennis Ritchie?</question>
+    <answer>2</answer>
+    <difficulty>3</difficulty>
     <all_answers>
+        <answer>Bjarne Stroustrup</answer>
+        <answer>Steve Wozniak</answer>
+        <answer>Ken Thompson</answer>
+        <answer>Niklaus Wirth</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>11</n>
+    <question>Voltage is sometimes referred to as EMF, or Electromotive...?</question>
+    <answer>3</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Field</answer>
+        <answer>Factor</answer>
+        <answer>Flash</answer>
+        <answer>Force</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>12</n>
+    <question>What does AM mean?</question>
+    <answer>2</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Angelo marconi</answer>
+        <answer>Anno median</answer>
+        <answer>Amplitude modulation</answer>
+        <answer>Amperes</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>13</n>
+    <question>'.BAT' extension refers usually to what kind of file?</question>
+    <answer>0</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Compressed Archive file</answer>
+        <answer>System file</answer>
+        <answer>Audio file</answer>
+        <answer>Backup file</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>14</n>
+    <question>What is the term to ask the computer to put information in order numerically or alphabetically?</question>
+    <answer>1</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Crop</answer>
+        <answer>Report</answer>
+        <answer>Record</answer>
+        <answer>Sort</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>15</n>
+    <question>The input used by an antenna or cable to a TV set uses frequencies called...?</question>
+    <answer>1</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>IF</answer>
+        <answer>RF</answer>
+        <answer>AF</answer>
+        <answer>SAP</answer>
+    </all_answers>
+    </note>
+
+
+    <note>
+    <n>16</n>
+    <question>Larger buildings may be supplied with a medium voltage electricity supply, and will required a substation or mini-sub. What is the main item of equipment contained in these?</question>
+    <answer>0</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Transformer</answer>
+        <answer>Transponder</answer>
+        <answer>Transducer</answer>
+        <answer>Converter</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>17</n>
+    <question>What was the active medium used in the first working laser ever constructed?</question>
+    <answer>2</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>A diamond block</answer>
+        <answer>Helium-neon gas</answer>
+        <answer>A ruby rod</answer>
+        <answer>Carbon dioxide gas</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>18</n>
+    <question>What does EPROM stand for?</question>
+    <answer>1</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Electric Programmable Read Only Memory</answer>
+        <answer>Erasable Programmable Read Only Memory</answer>
+        <answer>Evaluable Philotic Random Optic Memory</answer>
+        <answer>Every Person Requires One Mind</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>19</n>
+    <question>Blue is what number on the resistor color code?</question>
+    <answer>3</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>1</answer>
+        <answer>4</answer>
+        <answer>2</answer>
+        <answer>6</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>20</n>
+    <question>Changing computer language of 1's and 0's to characters that a person can understand is...</question>
+    <answer>2</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>Highlight</answer>
+        <answer>Clip art</answer>
+        <answer>Decode</answer>
+        <answer>Execute</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>21</n>
+    <question>What's a web browser?</question>
+    <answer>3</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>A kind of spider</answer>
+        <answer>A computer that stores WWW files</answer>
+        <answer>A person who likes to look at websites</answer>
+        <answer>A software program that allows you to access sites on the World Wide Web</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>22</n>
+    <question>http://www.indiabix.com - is an example of what?</question>
+    <answer>0</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>A URL</answer>
+        <answer>An access code</answer>
+        <answer>A directory</answer>
+        <answer>A server</answer>
+    </all_answers>
+    </note>
+
+    <note>
+    <n>23</n>
+    <question>How many bits is a byte?</question>
+    <answer>1</answer>
+    <difficulty>3</difficulty>
+    <all_answers>
+        <answer>4</answer>
         <answer>8</answer>
-        <answer>2</answer>
-        <answer>3</answer>
-        <answer>2</answer>
-        <answer>5</answer>
+        <answer>16</answer>
+        <answer>32</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>1-1</question>
+    <n>24</n>
+    <question>How do you subscribe to an Internet mailing list?</question>
     <answer>1</answer>
-    <difficulty>2</difficulty>
-    <all_answers>
-        <answer>43</answer>
-        <answer>0</answer>
-        <answer>3</answer>
-        <answer>6</answer>
-        <answer>22</answer>
-    </all_answers>
-    </note>
-
-    <note>
-    <question>4*3</question>
-    <answer>0</answer>
     <difficulty>3</difficulty>
     <all_answers>
-        <answer>12</answer>
-        <answer>23</answer>
-        <answer>43</answer>
-        <answer>4</answer>
-        <answer>53</answer>
+        <answer>Contact your Internet service provider</answer>
+        <answer>Send e-mail to the list manager</answer>
+        <answer>Telephone the mailing list webmaster</answer>
+        <answer>Send a letter to the list</answer>
     </all_answers>
     </note>
 
     <note>
-    <question>1+3</question>
-    <answer>3</answer>
-    <difficulty>1</difficulty>
-    <all_answers>
-        <answer>5</answer>
-        <answer>2</answer>
-        <answer>6</answer>
-        <answer>4</answer>
-        <answer>12</answer>
-    </all_answers>
-    </note>
-
-
-    <note>
-    <question>1-4</question>
+    <n>25</n>
+    <question>Computers calculate numbers in what mode?</question>
     <answer>2</answer>
-    <difficulty>2</difficulty>
+    <difficulty>3</difficulty>
     <all_answers>
-        <answer>13</answer>
-        <answer>42</answer>
-        <answer>-3</answer>
-        <answer>4</answer>
-        <answer>52</answer>
+        <answer>Decimal</answer>
+        <answer>Octal</answer>
+        <answer>Binary</answer>
+        <answer>None of the above</answer>
     </all_answers>
     </note>
 
-    <note>
-    <question>1*4</question>
-    <answer>3</answer>
-    <difficulty>3</difficulty>
-    <all_answers>
-        <answer>7</answer>
-        <answer>2</answer>
-        <answer>3</answer>
-        <answer>4</answer>
-        <answer>6</answer>
-    </all_answers>
-    </note>
 </questions>
